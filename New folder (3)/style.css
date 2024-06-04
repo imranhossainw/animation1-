@@ -1,0 +1,43 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.sky, .grass, .road{
+  position: relative;
+}
+.sky{
+  height: 40%;
+  background: skyblue;
+}
+.grass{
+  height: 30%;
+  background: seagreen;
+}
+.road{
+  height: 30%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-bottom: 10px solid grey;
+  border-top: 10px solid grey;
+}
+.lines{
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+.mo{
+  position: absolute;
+  top: -35%;
+  left: 0;
+  animation: moto 10s infinite;
+}
+@keyframes moto{
+  from{transform: translateX(0);}
+  to{ transform: translateX(2000px);}
+  
+}
